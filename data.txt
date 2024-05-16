@@ -1,0 +1,12 @@
+Three steps in creating a model
+1- We create a geometry. Its like a skeleton
+2- Then we choose a material
+3- Then we cover our geometry with the material
+
+
+We install dat.gui for helping ourselves for controlling the shapes
+
+Three types of light
+-Ambient light
+- Directional light
+- SPotlight
