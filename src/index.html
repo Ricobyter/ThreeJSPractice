@@ -8,11 +8,20 @@
         body{
             margin: 0;
             background-color: black
-
         }
     </style>
 </head>
 <body>
+    <script id="vertexShader" type="vertex">
+        void main(){
+            gl_position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+        }
+    </script>
+    <script id="fragmentShader" type="fragment">
+        void main(){
+            gl_FragColor = vec4(0.5, 0.5, 1.0, 1.0)
+        }
+    </script>
     <script src="./js/script.js" type="module"></script>
     
 </body>
